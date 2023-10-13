@@ -1,0 +1,30 @@
+.container {
+    width: 50%;
+    margin: -1.5rem auto 0 auto;
+    padding: 0 0.5rem;
+}
+
+/* ADAPTAÇÕES DE RESOLUÇÃO */
+@media (max-width: 768px) {
+    .container {
+        width: calc(100% - 1rem);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: calc(80% - 1rem);
+    }
+}
+
+@media (min-width: 880px) {
+    .container {
+        width: calc(60% - 1rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: calc(50% - 1rem);
+    }
+}

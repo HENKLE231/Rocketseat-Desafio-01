@@ -1,0 +1,63 @@
+
+.task {
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    background-color: var(--gray-500);
+    border-radius: 8px;
+    gap: 0.75rem;
+    padding: 1rem;
+    font-size: 0.875rem;
+}
+
+.circle {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+.checkedCircle {
+    background-color: var(--purple-600);
+    color: var(--gray-100);
+    transition: color 0.1s;
+    padding: 4px;
+    width: 10px;
+    height: 10px;
+}
+
+.checkedCircle:hover {
+    background-color: var(--purple-500);
+}
+
+.uncheckedCircle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid var(--blue-500);
+    transition: color 0.1s;
+}
+
+.uncheckedCircle:hover {
+    color: var(--blue-600);
+    background: var(--translucent-blue-600);
+}
+
+.trash {
+    color: var(--gray-300);
+    border-radius: 4px;
+    font-size: 0.875rem;
+    border: 0;
+    line-height: 0;
+    padding: 5px;
+    background-color: transparent;
+    transition: color 0.1s;
+    transition: background-color 0.1s;
+    height: fit-content;
+}
+
+.trash:hover {
+    color: var(--red-500);
+    background-color: var(--gray-400);
+}
